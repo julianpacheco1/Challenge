@@ -21,7 +21,7 @@
 
     <v-card-actions>
       <v-btn color="deep-purple lighten-2">
-        <router-link to="/product/id"> ProductID</router-link>
+        <router-link id="prod" :to="{name : 'prod'}"> ProductID</router-link>
       </v-btn>
     </v-card-actions>
     <v-divider class="mx-4"></v-divider>
@@ -36,29 +36,13 @@ export default {
   components: {ImageComp},
   props: ["per"],
   data: () => ({
-    height: "",
   }),
   methods: {
     ver() {
       /*    if(event) this.height = 500 
     else this.height = 250 */
     },
+   
   },
-  /*   data: () => ({
-    selection: 1,
-    baseURL: "https://rickandmortyapi.com/api/character",
-    personajes: [],
-  }),
-  methods: {
-    getapi() {
-      axios
-        .get(`${this.baseURL}`)
-        .then((res) => {
-          this.personajes = res.data.results;
-          console.log("personajes", this.personajes);
-        })
-        .catch((err) => console.log(err));
-    },
-  },*/
 };
 </script>

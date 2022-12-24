@@ -5,7 +5,7 @@
       <div>
         <v-btn>
           <v-icon>mdi-magnify</v-icon>
-          <input type="text" v-model="search" placeholder="Search" />
+          <input class="busq" type="text" v-model="search" placeholder="Search" />
         </v-btn>
       </div>
 
@@ -20,20 +20,21 @@
 </template>
 
 <script>
-import axios from "axios"
+/* import axios from "axios" */
 import CardComp from "./CardComp.vue";
 
 export default {
   name: "GridComp",
   components: { CardComp },
+  props:["personajes"],
   data: () => ({
     search: "",
     alignments: ["start"],
     selection: 1,
-    baseURL: "https://rickandmortyapi.com/api/character",
-    personajes: [],
+   /*  baseURL: "https://rickandmortyapi.com/api/character",
+    personajes: [], */
   }),
-  methods: {
+  /* methods: {
     getapi() {
       axios
         .get(`${this.baseURL}`)
@@ -46,7 +47,7 @@ export default {
   },
   mounted() {
     this.getapi();
-  }, 
+  },  */
   computed: {
     filterSearch() {
       return this.personajes.filter((psj) => {
@@ -56,3 +57,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.busq{
+  text-align: center;
+  background: #461e8c;
+  outline: none;
+  border: 1px;
+  width: 150px;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 1rem;
+}
+</style>

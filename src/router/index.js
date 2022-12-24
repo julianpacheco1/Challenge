@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from "../views/HomeView.vue"
 import SingleProduct from "../components/SingleProduct.vue"
+import GridComp from "../components/GridComp.vue"
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/product/id',
     name: 'prod',
     component: SingleProduct
+  },
+  {
+    path: '/allproducts',
+    name: 'all',
+    component: GridComp
   },
 ]
 

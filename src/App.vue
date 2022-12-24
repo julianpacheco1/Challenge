@@ -3,7 +3,7 @@
     <NavbarComp />
 
     <div style="min-height: 60vh">
-      <router-view :baseURL="baseURL" :personajes="personajes"> </router-view>
+      <router-view :baseURL="baseURL" :personajes="personajes"/> 
     </div>
   </div>
 </template>
@@ -12,7 +12,6 @@
 import axios from "axios";
 import NavbarComp from "./components/NavbarComp.vue";
 export default {
-  components: { NavbarComp },
   data() {
     return {
       baseURL: "https://rickandmortyapi.com/api/character",
@@ -20,9 +19,10 @@ export default {
       personajes: [],
     };
   },
+  components: { NavbarComp },
   methods: {
-    getapi() {
-      axios
+  async getapi() {
+       await axios
         .get(`${this.baseURL}`)
         .then((res) => {
           this.personajes = res.data.results;
@@ -30,16 +30,9 @@ export default {
         })
         .catch((err) => console.log(err));
     },
-    mounted() {
+  },
+  mounted() {
       this.getapi();
     },
-  },
-  computed: {
-    filterSearch() {
-      return this.personajes.filter((psj) => {
-        return psj.name.toLowerCase().includes(this.search.toLowerCase());
-      });
-    },
-  },
 };
 </script>
