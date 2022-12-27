@@ -25,16 +25,16 @@ npm install
 3) npm install
 ```
 
-### To raise the server
+## To raise the server
 
 ```
 nodemon app.js
 ```
-### Next
+## Next
 cd..
 cd..
 
-### Compiles and hot-reloads for development
+## Compiles and hot-reloads for development
 
 ```
 npm run serve
@@ -52,7 +52,7 @@ npm run serve
 ## Sobre el proyecto
 
 Tenemos un back muy simple, con un solo endpoint; donde retornamos la data necesaria para la visualizacion requerida.
-En el fron, nos encontramos con 4 carpetas escenciales:
+En el front, nos encontramos con 4 carpetas escenciales:
 
 1- View : Donde se renderizan todas las vistas de la app.
 2- Components : Donde se encuentran los componentes que se renderizan en cada vista, y en algunos casos pueden ser reutilizables.
