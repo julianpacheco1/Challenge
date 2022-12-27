@@ -51,6 +51,11 @@ npm run serve
 - CSS
 
 
+##Breve Roadmap
+
+- Pagina Home, donde vamos a encontrar una navbar, un carrusel, un logo,y un footer.
+En la navbar, arriba a la izquierda, encontramos un boton-link hacia "Productos"; esto nos va a renderizar una grilla de productos (relatedProducts), en forma de cards, con bastante informacion. Al pié de cada Card, hay un boton de "PRODUCTO ID", esto, nos va a renderizar la vista principal(la solicitada para el challenge), con los detalles del producto, y un carrusel al pié de la página.
+
 ## Sobre el proyecto
 
 Tenemos un back muy simple, con un solo endpoint; donde retornamos la data necesaria para la visualizacion requerida.
