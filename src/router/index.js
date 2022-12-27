@@ -1,33 +1,42 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from "../views/HomeView.vue"
-import SingleProduct from "../components/SingleProduct.vue"
-import GridComp from "../components/GridComp.vue"
+import Vue from "vue";
+import VueRouter from "vue-router";
+import HomeView from "../views/HomeView.vue";
+/* import SingleProduct from "../components/SingleProduct.vue" */
+// import GridComp from "../components/GridComp.vue";
+// import VistaSimple from "../components/VistaSimple.vue";
 
-Vue.use(VueRouter)
+import ProductListView from "../views/ProductListView";
+import ProductDetailView from "../views/ProductDetailView";
+
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomeView,
   },
-  {
-    path: '/product/id',
+  /*   {
+    path: '/product/:id',
     name: 'prod',
     component: SingleProduct
+  }, */
+  {
+    path: "/allproducts",
+    name: "all",
+    component: ProductListView,
   },
   {
-    path: '/allproducts',
-    name: 'all',
-    component: GridComp
+    path: "/vistasimple/product/:id",
+    name: "vista",
+    component: ProductDetailView,
   },
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

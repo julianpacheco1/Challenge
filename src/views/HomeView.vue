@@ -15,6 +15,7 @@
 
     <div>
       <img
+        class="im"
         src="https://dasbranding.com/wp-content/uploads/2019/11/Basualdo_galer%C3%ADa_12-1366x768.jpg"
         alt="se rompio"
       />
@@ -32,16 +33,16 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: "https://andujarynavarro.com/wp-content/uploads/2017/09/material-construccion.jpg",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          src: "https://proest.com/wp-content/uploads/2021/12/common-construction-materials-1024x493.jpg",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          src: "https://jesusgonzaleztienda.com/web2017/wp-content/uploads/2018/06/griferia-cocina-1030x773.jpg",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+          src: "https://elcordillerano1.cdn.net.ar/252/elcordillerano/images/65/95/659534_3db28893cb69cbc4e7b3539ce84d2597383b8db4df9294254ed8fe408268b7a7/md.webp",
         },
       ],
     };
@@ -52,28 +53,11 @@ export default {
 <style>
 h1 {
   text-align: center;
-  margin : 0 auto
+  margin: 0 auto;
+}
+
+.im {
+  width: 100%;
+  height: auto;
 }
 </style>
-
-<!-- carrusel
-.carousel-parent[data-v-5957d941] {
-    position: relative;
-    min-width: 0;
-    width: 100%;
-}
-* {
-    padding: 0;
-    margin: 0;
-}
-*, :after, :before {
-    background-repeat: no-repeat;
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-user agent stylesheet
-div {
-    display: block;
-} -->

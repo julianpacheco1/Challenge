@@ -5,23 +5,28 @@
     </template>
     <div>
       
-      <v-img ><ImageComp :per="per"/></v-img>
+      <v-img
+       
+        :src="prd.mainImage.originalUrl"
+        height="100%"
+        
+      ></v-img>
     </div>
-    <v-card-title v-on:click="ver">{{ per.name }} </v-card-title>
+    <v-card-title>{{ prd.name }} </v-card-title>
 
     <v-card-text>
       <div>
-        {{ per.gender }}
+        STOCK {{prd.variants[0].stock.qty}}
       </div>
     </v-card-text>
 
     <v-card-text>
-      <div>{{ per.species }}</div>
+      <div> PRICE {{prd.variants[0].pvPrice.basePrice}}</div>
     </v-card-text>
 
     <v-card-actions>
       <v-btn color="deep-purple lighten-2">
-        <router-link id="prod" :to="{name : 'prod'}"> ProductID</router-link>
+        <router-link id="prod" :to="{name : 'vista', params : {id:prd.id}}"> ProductID</router-link>
       </v-btn>
     </v-card-actions>
     <v-divider class="mx-4"></v-divider>
@@ -30,11 +35,11 @@
 
 <script>
 
-import ImageComp from "./ImageComp.vue"
+
 export default {
   name: "CardComp",
-  components: {ImageComp},
-  props: ["per"],
+  components: {},
+  props: ["prd"],
   data: () => ({
   }),
   methods: {
@@ -46,3 +51,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.imagen{
+max-width: 300px;
+}
+
+</style>
