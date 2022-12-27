@@ -31,8 +31,10 @@ npm install
 nodemon app.js
 ```
 ## Next
+```
 cd..
 cd..
+```
 
 ## Compiles and hot-reloads for development
 
