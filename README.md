@@ -47,6 +47,7 @@ npm run serve
 
 - Vue.js 2
 - Vuetify
+- Node.js
 - Express
 - Axios
 - CSS
