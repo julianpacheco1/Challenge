@@ -8,7 +8,7 @@ Este FrontEnd esta conectado a un Backend que es necesario para poder operar
 
 ## Follow these steps
 
-1. Clona el repositorio en tu local
+1. Clona el repositorio en tu local e instala los paquetes
    
 ```sh
 git clone https://github.com/julianpacheco1/Challenge.git
