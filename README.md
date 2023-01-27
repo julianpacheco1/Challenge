@@ -1,5 +1,7 @@
 # challenge-dru
 
+Este es un challenge, que me pidieron para realizar en Vue.js; yo no tenía ningun conocimiento acerca de Vue, y me dieron 96hs para aprenderlo,y codearlo.
+
 ## Empezando
 
 Este FrontEnd esta conectado a un Backend que es necesario para poder operar
